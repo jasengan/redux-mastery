@@ -1,7 +1,8 @@
-import CakeActionTypes from './cake.type';
+import CakeActionTypes from "./cake.types";
 
-//action creator: buyCake... to trigger the buy cake action
-export const buyCake = cakeCount => ({
-    type: CakeActionTypes.BUY_CAKE,
-    payload: cakeCount
-});
+//action creator: buyCake
+export const buyCake = () => {
+    return {
+        type: CakeActionTypes.BUY_CAKE
+    }
+};
